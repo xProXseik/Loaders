@@ -47,13 +47,13 @@ namespace ARMY
                     Assembly axembly = Assembly.Load(File.ReadAllBytes(dllPath));
                     WebClient webC = new WebClient();
 
-                    /*var localVersion = axembly.GetName().Version.ToString();
+                    var localVersion = axembly.GetName().Version.ToString();
                     string webVersion = GetOnlineVersion();
 
                     if (!localVersion.Equals(webVersion))
                     {
                         Update();
-                    }*/
+                    }
 
                     CallAddon();
                 }
